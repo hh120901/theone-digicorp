@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.hello-world h2 {
+			color: red;
+			padding: 20px 10px;
+		}
+		.d-none {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="hello-world">
+		<h2>HELLO WORLD</h2>
+		<button class="btn-hello-world" onclick="appendHtml()">Click me!</button>
+		<h3 class="d-none" id="show-this">It's work</h3>
+	</div>
+	<script>
+		const appendHtml = () => {
+			let getBtn = document.querySelector('#show-this');
+			getBtn.classList.toggle("d-none")
+		}
+	</script>
+</body>
+</html>
